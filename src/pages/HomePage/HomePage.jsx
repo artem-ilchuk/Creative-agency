@@ -1,7 +1,8 @@
 import React from "react";
+import s from "./AboutPage.module.css";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <section className={s.home}>HomePage</section>;
 };
 
 export default HomePage;

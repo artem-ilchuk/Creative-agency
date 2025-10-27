@@ -1,7 +1,8 @@
 import React from "react";
+import s from "./AboutPage.module.css";
 
 const About = () => {
-  return <div>About</div>;
+  return <section className={s.about}>About</section>;
 };
 
 export default About;

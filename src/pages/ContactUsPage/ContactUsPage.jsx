@@ -1,7 +1,8 @@
 import React from "react";
+import s from "./AboutPage.module.css";
 
 const ContactUs = () => {
-  return <div>ContactUs</div>;
+  return <section className={s.contact}>ContactUs</section>;
 };
 
 export default ContactUs;
