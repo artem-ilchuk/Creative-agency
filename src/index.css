@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Circular Std";
+  src: url("/fonts/CircularStd/CircularStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url("/fonts/Helvetica/HelveticaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --text-dark: #111029;
+  --text-grey: #6b6b6b;
+  --color-primary-1: #4c40f7;
+  --color-primary-2: #ff6800;
+  --color-secondary-1: #ff3b2f;
+  --color-secondary-2: #fe9602;
+  --color-secondary-3: #fc0;
+  --color-secondary-4: #4adb61;
+  --color-secondary-5: #5cc8fc;
+  --color-tertiary-1: #007bff;
+  --color-tertiary-2: #5955d8;
+  --color-tertiary-3: #ff2d59;
+  --color-dark: #00113b;
+  --color-white: #fff;
+  --grayscale-grayscale-1: #081420;
+  --grayscale-grayscale-2: #192431;
+  --grayscale-grayscale-3: #212c3a;
+  --grayscale-grayscale-4: #70798b;
+  --grayscale-grayscale-5: #abafc7;
+  --grayscale-grayscale-6: #f3f4f6;
+  --deactive-grey: #9f9fa9;
+  --shadow-shadow-color: #dbdee1;
+  --form-textbox: #fff;
+  --line-light-line: #ececec;
+  --line-footer-line: #d8d8d8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  transition: background-color 0.3s, color 0.3s;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 120px;
+  }
+}
