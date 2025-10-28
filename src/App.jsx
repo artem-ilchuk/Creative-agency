@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setLastRoute } from "./redux/uiSlice";
+import Layout from "./layouts/Layout";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const WorksPage = lazy(() => import("./pages/WorksPage/WorksPage"));
@@ -22,17 +23,17 @@ function App() {
   }, [location.pathname, dispatch]);
 
   return (
-    <>
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/works" element={<WorksPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactUsPage />} />
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="works" element={<WorksPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactUsPage />} />
           <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Suspense>
-    </>
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 

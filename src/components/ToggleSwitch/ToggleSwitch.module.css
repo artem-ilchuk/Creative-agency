@@ -7,60 +7,51 @@
   height: 100%;
 }
 
+.toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .toggle + label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1em;
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
+  transition: background-color 0.3s ease;
 }
 
 .toggle + label::before {
   content: "";
-  height: 1.2em;
-  width: 2.5em;
-  border-radius: 1.2em;
-  background-color: var(--toggle-bg);
-  transition: background-color 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grayscale-grayscale-5);
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
 }
 
 .toggle + label::after {
   content: "";
   position: absolute;
-  left: 0.15rem;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 1em;
-  width: 1em;
+  top: 3px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-white);
   border-radius: 50%;
-  background-color: var(--toggle-fg);
-  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 2px 2px 4px 0 rgba(8, 20, 32, 0.3);
 }
 
 .toggle:checked + label::before {
-  background-color: var(--toggle-fg);
+  background-color: var(--color-primary-1);
 }
 
 .toggle:checked + label::after {
-  transform: translate(1.2em, -50%);
-  background-color: var(--toggle-bg);
-}
-@media (min-width: 1280px) {
-  .toggle + label::before {
-    height: 1.7rem;
-    width: 3.6rem;
-  }
-
-  .toggle + label::after {
-    content: "";
-    position: absolute;
-    left: 0.4em;
-    height: 1.3em;
-    width: 1.3em;
-  }
+  transform: translateX(16px);
+  background-color: var(--color-white);
 }

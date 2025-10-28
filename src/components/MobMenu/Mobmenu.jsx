@@ -1,5 +1,3 @@
-import React from "react";
-
 const Mobmenu = () => {
   return <div>Mobmenu</div>;
 };

@@ -1,5 +1,4 @@
-import React from "react";
-import s from "./AboutPage.module.css";
+import s from "./HomePage.module.css";
 
 const HomePage = () => {
   return <section className={s.home}>HomePage</section>;

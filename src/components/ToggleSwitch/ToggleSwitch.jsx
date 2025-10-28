@@ -1,6 +1,6 @@
-import s from "./TogleSwitch.module.css";
+import s from "./ToggleSwitch.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { setTheme } from "../store/uiSlice";
+import { setTheme } from "../../redux/uiSlice";
 
 export const Toggle = () => {
   const dispatch = useDispatch();
