@@ -13,6 +13,7 @@
   height: 48px;
   background-color: var(--color-primary-1);
   border-radius: 10px;
+  cursor: pointer;
   box-shadow: -5px 10px 30px 0 rgba(76, 64, 247, 0.5);
 }
 .iconLogo {
@@ -27,7 +28,14 @@
   align-items: center;
   gap: 50px;
 }
-.menu {
+
+.iconMenu {
+  fill: var(--burger);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }

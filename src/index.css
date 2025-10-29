@@ -68,11 +68,23 @@
 [data-theme="light"] {
   background-color: var(--color-white);
   color: var(--text-dark);
+  --links: var(--text-grey);
+  --actLinks: var(--color-primary-1);
+  --burger: var(--color-dark);
+  --close: var(--color-dark);
+  --modal: var(--color-white);
+  --modalLines: var(--line-light-line);
 }
 
 [data-theme="dark"] {
   background-color: var(--color-dark);
   color: var(--color-white);
+  --links: var(--color-white);
+  --actLinks: var(--color-secondary-3);
+  --burger: var(--color-white);
+  --close: var(--color-white);
+  --modal: var(--color-dark);
+  --modalLines: var(--color-primary-1);
 }
 
 html {

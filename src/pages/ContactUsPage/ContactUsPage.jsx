@@ -1,4 +1,4 @@
-import s from "./AboutPage.module.css";
+import s from "./ContactUsPage.module.css";
 
 const ContactUs = () => {
   return <section className={s.contact}>ContactUs</section>;

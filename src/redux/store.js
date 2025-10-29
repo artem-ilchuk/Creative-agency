@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { uiReducer } from "./uiSlice";
+import { modalsReducer } from "./modal/modalSlice";
 import {
   persistStore,
   persistReducer,
@@ -24,6 +25,7 @@ const persistedReducer = persistReducer(persistConfig, uiReducer);
 export const store = configureStore({
   reducer: {
     ui: persistedReducer,
+    modals: modalsReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

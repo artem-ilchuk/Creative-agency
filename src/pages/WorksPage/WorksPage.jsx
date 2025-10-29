@@ -1,4 +1,4 @@
-import s from "./AboutPage.module.css";
+import s from "./WorksPage.module.css";
 
 const Works = () => {
   return <section className={s.works}>Works</section>;
