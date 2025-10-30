@@ -20,6 +20,10 @@ const Mobmenu = () => {
     }
   };
 
+  const handleLinkClick = () => {
+    closeModal();
+  };
+
   return (
     <div className={s.overlay} onClick={handleBackdropClick}>
       <div className={s.modal}>
@@ -49,6 +53,7 @@ const Mobmenu = () => {
               className={buildLinkClass}
               to="/"
               aria-label="Go to home page"
+              onClick={handleLinkClick}
             >
               Home
             </NavLink>
@@ -56,6 +61,7 @@ const Mobmenu = () => {
               className={buildLinkClass}
               to="/works"
               aria-label="Go to works page"
+              onClick={handleLinkClick}
             >
               Works
             </NavLink>
@@ -63,6 +69,7 @@ const Mobmenu = () => {
               className={buildLinkClass}
               to="/about"
               aria-label="Go to about page"
+              onClick={handleLinkClick}
             >
               About
             </NavLink>
@@ -99,6 +106,7 @@ const Mobmenu = () => {
             className={s.contact}
             to="/contact"
             aria-label="Go to contact page"
+            onClick={handleLinkClick}
           >
             Contact us
           </NavLink>

@@ -7,9 +7,21 @@ export const Toggle = () => {
   const theme = useSelector((state) => state.ui.theme);
 
   const toggleTheme = () => {
+    const root = document.documentElement;
     const newTheme = theme === "light" ? "dark" : "light";
-    dispatch(setTheme(newTheme));
-    document.documentElement.setAttribute("data-theme", newTheme);
+
+    const overlay = document.createElement("div");
+    overlay.classList.add("theme-transition");
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      root.setAttribute("data-theme", newTheme);
+      dispatch(setTheme(newTheme));
+    }, 200);
+
+    overlay.addEventListener("animationend", () => {
+      overlay.remove();
+    });
   };
 
   return (

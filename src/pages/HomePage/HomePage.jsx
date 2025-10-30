@@ -1,7 +1,12 @@
 import s from "./HomePage.module.css";
+import Hero from "../../components/Hero/Hero";
 
 const HomePage = () => {
-  return <section className={s.home}>HomePage</section>;
+  return (
+    <main className={s.home}>
+      <Hero />
+    </main>
+  );
 };
 
 export default HomePage;

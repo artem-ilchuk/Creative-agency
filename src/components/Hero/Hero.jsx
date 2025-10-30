@@ -1,11 +1,12 @@
 import s from "./Hero.module.css";
 import useMedia from "../../hooks/UseMedia";
-import heroMob1x from "../../assets/img/Mobile/heroMobx1.webp";
-import heroMob2x from "../../assets/img/Mobile/heroMobx2.webp";
-import heroTab1x from "../../assets/img/Tab/HeroTab1x.webp";
-import heroTab2x from "../../assets/img/Tab/HeroTab2x.webp";
-import heroDesc1x from "../../assets/img/Desctop/HeroDesc1x.webp";
-import heroDesc2x from "../../assets/img/Desctop/HeroDesc2x.webp";
+import heroMob1x from "../../assets/img/Mobile/heroMob1x.webp";
+import heroMob2x from "../../assets/img/Mobile/heroMob2x.webp";
+import heroTab1x from "../../assets/img/Tab/heroTab1x.webp";
+import heroTab2x from "../../assets/img/Tab/heroTab2x.webp";
+import heroDesc1x from "../../assets/img/Desctop/heroDesc1x.webp";
+import heroDesc2x from "../../assets/img/Desctop/heroDesc2x.webp";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const { isMobile, isTablet, isDesktop } = useMedia();
@@ -36,6 +37,24 @@ const Hero = () => {
           alt="Smiling lady"
         />
       )}
+      <h1 className={s.heroTitle}>
+        Make your business <span className={s.titlePart}>more powerful</span>{" "}
+        with us
+      </h1>
+      <p className={s.text}>
+        We provide various services to make your business grow and get bigger.
+        Your satisfaction is our first priority.
+      </p>
+      <NavLink
+        className={s.start}
+        to="/contact"
+        aria-label="Go to contact page"
+      >
+        Get started
+        <svg className={s.rightArrow} width="16" height="12">
+          <use href="/sprite.svg#icon-Arrow-Right" />
+        </svg>
+      </NavLink>
     </section>
   );
 };

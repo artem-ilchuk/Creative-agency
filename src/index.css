@@ -68,23 +68,48 @@
 [data-theme="light"] {
   background-color: var(--color-white);
   color: var(--text-dark);
+  --bg: var(--color-white);
   --links: var(--text-grey);
   --actLinks: var(--color-primary-1);
   --burger: var(--color-dark);
   --close: var(--color-dark);
   --modal: var(--color-white);
   --modalLines: var(--line-light-line);
+  --herotitle: var(--color-primary-2);
 }
 
 [data-theme="dark"] {
   background-color: var(--color-dark);
   color: var(--color-white);
+  --bg: var(--color-dark);
   --links: var(--color-white);
   --actLinks: var(--color-secondary-3);
   --burger: var(--color-white);
   --close: var(--color-white);
   --modal: var(--color-dark);
   --modalLines: var(--color-primary-1);
+  --herotitle: var(--color-secondary-3);
+}
+
+.theme-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: var(--bg);
+  pointer-events: none;
+  animation: theme-fade 0.4s ease forwards;
+}
+
+@keyframes theme-fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 html {
@@ -92,7 +117,7 @@ html {
 }
 body {
   background-color: var(--color-white);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.4s, color 0.4s;
   font-family: var(--font-family);
   line-height: 1.5;
   margin: 0 auto;
@@ -117,7 +142,6 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 .container {
