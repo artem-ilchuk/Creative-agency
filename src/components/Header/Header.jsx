@@ -46,34 +46,39 @@ const Header = () => {
           </div>
         ) : (
           <nav className={s.nav}>
-            <NavLink
-              className={buildLinkClass}
-              to="/"
-              aria-label="Go to home page"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              className={buildLinkClass}
-              to="/works"
-              aria-label="Go to works page"
-            >
-              Works
-            </NavLink>
-            <NavLink
-              className={buildLinkClass}
-              to="/about"
-              aria-label="Go to about page"
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={buildLinkClass}
-              to="/contact"
-              aria-label="Go to contact page"
-            >
-              Contact us
-            </NavLink>
+            <div className={s.links}>
+              <NavLink
+                className={buildLinkClass}
+                to="/"
+                aria-label="Go to home page"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                className={buildLinkClass}
+                to="/works"
+                aria-label="Go to works page"
+              >
+                Works
+              </NavLink>
+              <NavLink
+                className={buildLinkClass}
+                to="/about"
+                aria-label="Go to about page"
+              >
+                About
+              </NavLink>
+            </div>
+            <div className={s.action}>
+              <Toggle />
+              <NavLink
+                className={s.contact}
+                to="/contact"
+                aria-label="Go to contact page"
+              >
+                Contact us
+              </NavLink>
+            </div>
           </nav>
         )}
       </div>
