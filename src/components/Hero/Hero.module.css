@@ -1,3 +1,6 @@
+.hero {
+  position: relative;
+}
 .heroImgMob {
   width: 112%;
   transform: translateX(-5%);
@@ -50,4 +53,20 @@
 .rightArrow {
   fill: var(--color-white);
   stroke-width: 2px;
+}
+.Line {
+  position: absolute;
+  top: 445px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 490px;
+  background-image: url("/lines/homeMobLine.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+.Line path {
+  stroke: var(--modalLines);
 }

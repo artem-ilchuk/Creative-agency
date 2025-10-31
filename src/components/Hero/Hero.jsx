@@ -55,6 +55,7 @@ const Hero = () => {
           <use href="/sprite.svg#icon-Arrow-Right" />
         </svg>
       </NavLink>
+      {isMobile && <div className={s.Line}></div>}
     </section>
   );
 };
