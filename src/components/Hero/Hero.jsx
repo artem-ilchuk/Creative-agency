@@ -37,25 +37,27 @@ const Hero = () => {
           alt="Smiling lady"
         />
       )}
-      <h1 className={s.heroTitle}>
-        Make your business <span className={s.titlePart}>more powerful</span>{" "}
-        with us
-      </h1>
-      <p className={s.text}>
-        We provide various services to make your business grow and get bigger.
-        Your satisfaction is our first priority.
-      </p>
-      <NavLink
-        className={s.start}
-        to="/contact"
-        aria-label="Go to contact page"
-      >
-        Get started
-        <svg className={s.rightArrow} width="16" height="12">
-          <use href="/sprite.svg#icon-Arrow-Right" />
-        </svg>
-      </NavLink>
-      {isMobile && <div className={s.Line}></div>}
+      <div className={s.content}>
+        <h1 className={s.heroTitle}>
+          Make your business <span className={s.titlePart}>more powerful </span>
+          with us
+        </h1>
+        <p className={s.text}>
+          We provide various services to make your business grow and get bigger.
+          Your satisfaction is our first priority.
+        </p>
+        <NavLink
+          className={s.start}
+          to="/contact"
+          aria-label="Go to contact page"
+        >
+          Get started
+          <svg className={s.rightArrow} width="16" height="12">
+            <use href="/sprite.svg#icon-Arrow-Right" />
+          </svg>
+        </NavLink>
+        <div className={s.Line}></div>
+      </div>
     </section>
   );
 };

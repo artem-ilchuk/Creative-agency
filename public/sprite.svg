@@ -4,8 +4,8 @@
 <path fill="#00113b" style="fill: var(--color1, #00113b)" d="M16.943 23.057l-5.724-5.724h12.781v-2.667h-12.781l5.724-5.724-1.885-1.885-8.943 8.943 8.943 8.943 1.885-1.885z"></path>
 </symbol>
 <symbol id="icon-Arrow-Right" viewBox="0 0 43 32">
-<path fill="none" stroke="#fff" stroke-width="5.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #fff)" d="M2.667 15.734h37.333"></path>
-<path fill="none" stroke="#fff" stroke-width="5.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #fff)" d="M26.934 2.667l13.067 13.067-13.067 13.067"></path>
+<path fill="none" stroke="#fff" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #fff)" d="M2.667 15.734h37.333"></path>
+<path fill="none" stroke="#fff"  stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #fff)" d="M26.934 2.667l13.067 13.067-13.067 13.067"></path>
 </symbol>
 <symbol id="icon-Arrow" viewBox="0 0 32 32">
 <path fill="#00113b" style="fill: var(--color1, #00113b)" d="M20.561 16c0 0.287-0.109 0.573-0.328 0.792l-6.88 6.88c-0.438 0.438-1.147 0.438-1.585 0s-0.437-1.147 0-1.585l6.088-6.087-6.087-6.087c-0.437-0.438-0.437-1.147 0-1.584s1.147-0.438 1.585 0l6.88 6.879c0.219 0.219 0.328 0.505 0.328 0.792z"></path>
