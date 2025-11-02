@@ -1,0 +1,8 @@
+.ourServices {
+  margin-top: 120px;
+}
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

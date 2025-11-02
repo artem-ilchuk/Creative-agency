@@ -1,0 +1,56 @@
+.thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  border-radius: 20px;
+  padding: 44px;
+  width: 380px;
+  height: 458px;
+  background-color: var(--servicecard);
+  box-shadow: var(--servicecardshadow);
+}
+.round {
+  width: 97px;
+  height: 97px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-white);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+}
+.text {
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  color: var(--links);
+}
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: var(--servicearrow);
+}
+.action {
+  width: 26px;
+  height: 19px;
+  stroke-width: 3px;
+}
