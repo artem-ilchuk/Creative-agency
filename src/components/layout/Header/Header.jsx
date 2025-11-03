@@ -1,12 +1,12 @@
 import s from "./Header.module.css";
 import clsx from "clsx";
-import useMedia from "../../hooks/UseMedia";
+import useMedia from "../../../hooks/UseMedia";
 import { NavLink } from "react-router-dom";
-import { Toggle } from "../ToggleSwitch/ToggleSwitch";
+import { Toggle } from "../../ToggleSwitch/ToggleSwitch";
 import { useSelector, useDispatch } from "react-redux";
-import { selectIsMobileModalOpen } from "../../redux/modal/modalSelectors";
-import { toggleMobileModal } from "../../redux/modal/modalSlice";
-import Mobmenu from "../MobMenu/Mobmenu";
+import { selectIsMobileModalOpen } from "../../../redux/modal/modalSelectors";
+import { toggleMobileModal } from "../../../redux/modal/modalSlice";
+import Mobmenu from "../../MobMenu/Mobmenu";
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(s.link, isActive && s.active);
@@ -25,7 +25,7 @@ const Header = () => {
       <div className={s.head}>
         <NavLink to="/" className={s.logo} aria-label="Go to home page">
           <svg className={s.iconLogo}>
-            <use href="./sprite.svg#icon-Logo" />
+            <use href="/sprite.svg#icon-Logo" />
           </svg>
         </NavLink>
 
@@ -46,29 +46,35 @@ const Header = () => {
           </div>
         ) : (
           <nav className={s.nav}>
-            <div className={s.links}>
-              <NavLink
-                className={buildLinkClass}
-                to="/"
-                aria-label="Go to home page"
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className={buildLinkClass}
-                to="/works"
-                aria-label="Go to works page"
-              >
-                Works
-              </NavLink>
-              <NavLink
-                className={buildLinkClass}
-                to="/about"
-                aria-label="Go to about page"
-              >
-                About
-              </NavLink>
-            </div>
+            <ul className={s.linksList}>
+              <li className={s.navListItem}>
+                <NavLink
+                  className={buildLinkClass}
+                  to="/"
+                  aria-label="Go to home page"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className={s.navListItem}>
+                <NavLink
+                  className={buildLinkClass}
+                  to="/works"
+                  aria-label="Go to works page"
+                >
+                  Works
+                </NavLink>
+              </li>
+              <li className={s.navListItem}>
+                <NavLink
+                  className={buildLinkClass}
+                  to="/about"
+                  aria-label="Go to about page"
+                >
+                  About
+                </NavLink>
+              </li>
+            </ul>
             <div className={s.action}>
               <Toggle />
               <NavLink

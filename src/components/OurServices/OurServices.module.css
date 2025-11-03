@@ -1,8 +1,123 @@
 .ourServices {
   margin-top: 120px;
 }
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--services);
+}
+.text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
 .servicesList {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
+}
+
+.serviceItem {
+  z-index: 2;
+}
+
+.Line {
+  position: absolute;
+  bottom: 490px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 490px;
+  background-image: url("/lines/HomeLines/serviceMobLine.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+
+.Line path {
+  stroke: var(--modalLines);
+}
+
+@media (min-width: 320px) and (max-width: 439px) {
+  .text {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ourServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .text {
+    font-size: 24px;
+    line-height: 133%;
+    max-width: 600px;
+  }
+  .servicesList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 20px;
+  }
+
+  .Line {
+    position: absolute;
+    bottom: 490px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1024px;
+    height: 1021px;
+    background-image: url("/lines/HomeLines/serviceTabLine.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ourServices {
+    margin-top: 236.18px;
+  }
+
+  .text {
+    max-width: 1120px;
+    font-size: 42px;
+    line-height: 133%;
+    letter-spacing: 0em;
+  }
+
+  .servicesList {
+    column-gap: 32px;
+  }
+  .Line {
+    position: absolute;
+    top: 1000px;
+    left: 1000px;
+    border: 1px solid red;
+    transform: translateX(-50%) rotate(-28.79deg);
+    width: 2080px;
+    height: 1021px;
+    background-image: url("/lines/HomeLines/serviceDescLine.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+  }
 }

@@ -49,32 +49,38 @@ const Mobmenu = () => {
           </div>
           <div className={s.Line}></div>
           <nav className={s.nav}>
-            <div className={s.links}>
-              <NavLink
-                className={buildLinkClass}
-                to="/"
-                aria-label="Go to home page"
-                onClick={handleLinkClick}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className={buildLinkClass}
-                to="/works"
-                aria-label="Go to works page"
-                onClick={handleLinkClick}
-              >
-                Works
-              </NavLink>
-              <NavLink
-                className={buildLinkClass}
-                to="/about"
-                aria-label="Go to about page"
-                onClick={handleLinkClick}
-              >
-                About
-              </NavLink>
-            </div>
+            <ul className={s.linksList}>
+              <li className={s.navListItem}>
+                <NavLink
+                  className={buildLinkClass}
+                  to="/"
+                  aria-label="Go to home page"
+                  onClick={handleLinkClick}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className={s.navListItem}>
+                <NavLink
+                  className={buildLinkClass}
+                  to="/works"
+                  aria-label="Go to works page"
+                  onClick={handleLinkClick}
+                >
+                  Works
+                </NavLink>
+              </li>
+              <li className={s.navListItem}>
+                <NavLink
+                  className={buildLinkClass}
+                  to="/about"
+                  aria-label="Go to about page"
+                  onClick={handleLinkClick}
+                >
+                  About
+                </NavLink>
+              </li>
+            </ul>
             <div className={s.line1}></div>
             <div className={s.line2}></div>
             <NavLink

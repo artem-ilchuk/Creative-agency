@@ -78,7 +78,8 @@
   --herotitle: var(--color-primary-2);
   --services: var(--color-tertiary-3);
   --servicecard: var(--color-white);
-  --servicearrow: #020e2d;
+  --servicearrowback: var(--grayscale-grayscale-6);
+  --servicearrow: var(--color-primary-1);
   --servicecardshadow: -10px 30px 70px 0 rgba(219, 222, 225, 0.4);
 }
 
@@ -95,7 +96,8 @@
   --herotitle: var(--color-secondary-3);
   --services: var(--color-secondary-3);
   --servicecard: var(--color-dark);
-  --servicearrow: var(--grayscale-grayscale-6);
+  --servicearrowback: #020e2d;
+  --servicearrow: var(--color-white);
   --servicecardshadow: -10px 30px 70px 0 rgba(76, 64, 247, 0.2);
 }
 
