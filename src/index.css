@@ -126,11 +126,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--color-white);
   transition: background-color 0.4s, color 0.4s;
   font-family: var(--font-family);
   line-height: 1.5;
-  margin: 0 auto;
 }
 
 h1,
@@ -158,6 +156,7 @@ img {
   min-width: 320px;
   max-width: 440px;
   padding: 0 24px;
+  margin: 0 auto;
 }
 @media (min-width: 1024px) {
   .container {

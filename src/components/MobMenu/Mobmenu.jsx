@@ -27,7 +27,7 @@ const Mobmenu = () => {
   return (
     <div className={s.overlay} onClick={handleBackdropClick}>
       <div className={s.modal}>
-        <div className="container">
+        <div className={s.modalContainer}>
           <div className={s.head}>
             <NavLink to="/" className={s.logo} aria-label="Go to home page">
               <svg className={s.iconLogo}>

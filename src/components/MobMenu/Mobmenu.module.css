@@ -11,6 +11,11 @@
   justify-content: space-between;
   background-color: var(--modal);
 }
+.modalContainer {
+  min-width: 320px;
+  max-width: 440px;
+  padding: 0 24px;
+}
 
 .head {
   display: flex;

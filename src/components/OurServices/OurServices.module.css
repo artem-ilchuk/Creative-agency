@@ -1,5 +1,6 @@
 .ourServices {
   margin-top: 120px;
+  position: relative;
 }
 .title {
   font-weight: 500;
@@ -17,7 +18,6 @@
   padding-bottom: 60px;
 }
 .servicesList {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
   bottom: 490px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120%;
+  width: 1000px;
   height: 490px;
   background-image: url("/lines/HomeLines/serviceMobLine.svg");
   background-repeat: no-repeat;
@@ -78,10 +78,10 @@
 
   .Line {
     position: absolute;
-    bottom: 490px;
+    top: 450px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1024px;
+    width: 2080.37px;
     height: 1021px;
     background-image: url("/lines/HomeLines/serviceTabLine.svg");
     background-repeat: no-repeat;
@@ -94,6 +94,8 @@
 @media (min-width: 1440px) {
   .ourServices {
     margin-top: 236.18px;
+    position: relative;
+    overflow: visible;
   }
 
   .text {
@@ -105,15 +107,14 @@
 
   .servicesList {
     column-gap: 32px;
+    z-index: 2;
   }
+
   .Line {
     position: absolute;
-    top: 1000px;
-    left: 1000px;
-    border: 1px solid red;
-    transform: translateX(-50%) rotate(-28.79deg);
-    width: 2080px;
-    height: 1021px;
+    top: 585px;
+    width: 1440px;
+    stroke-width: 15px;
     background-image: url("/lines/HomeLines/serviceDescLine.svg");
     background-repeat: no-repeat;
     background-size: cover;
