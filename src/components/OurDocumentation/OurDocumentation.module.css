@@ -1,0 +1,111 @@
+.ourDocumentation {
+  margin-top: 120px;
+  position: relative;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--services);
+}
+
+.text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.videotest {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  width: 380px;
+  height: 220px;
+  z-index: 3;
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 220px;
+  border-radius: 8px;
+  z-index: 3;
+}
+
+.videotest {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-wrapper {
+  position: relative;
+  height: 344px;
+  overflow: hidden; /* обрезка только по высоте */
+  width: 100vw; /* ширина всей вьюпорты */
+  margin-left: calc(-50vw + 50%);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* чтобы по горизонтали элементы свободно выходили */
+}
+
+.shape1,
+.shape2 {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+
+.shape1 {
+  background-image: url("/lines/HomeLines/shape1.svg");
+  top: -2%;
+  left: 39%;
+  transform: translateX(-50%);
+  width: 775px;
+  height: 712px;
+  z-index: 1;
+}
+
+.shape2 {
+  background-image: url("/lines/HomeLines/shape2.svg");
+  top: -21%;
+  left: 88%;
+  transform: translateX(-50%);
+  width: 512.85px;
+  height: 611.75px;
+  z-index: 2;
+}
+
+@media (min-width: 320px) and (max-width: 439px) {
+  .shape1 {
+    background-image: url("/lines/HomeLines/shape1.svg");
+    top: -14%;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 775px;
+    height: 712px;
+    z-index: 1;
+  }
+
+  .videotest {
+    max-width: 320px;
+  }
+}
