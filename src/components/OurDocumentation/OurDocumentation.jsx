@@ -14,7 +14,7 @@ const OurDocumentation = () => {
         <VideoPlayer src={Innovation} className={s.videotest} />
       </div>
 
-      <div className={s["background-wrapper"]}>
+      <div className={s.backgroundWrapper}>
         <div className={s.background}>
           <div className={s.shape1}></div>
           <div className={s.shape2}></div>
