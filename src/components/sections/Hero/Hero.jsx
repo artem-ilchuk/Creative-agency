@@ -1,5 +1,5 @@
 import s from "./Hero.module.css";
-import useMedia from "../../hooks/UseMedia";
+import useMedia from "../../../hooks/UseMedia";
 import heroMob1x from "../../assets/img/Mobile/heroMob1x.webp";
 import heroMob2x from "../../assets/img/Mobile/heroMob2x.webp";
 import heroTab1x from "../../assets/img/Tab/heroTab1x.webp";

@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import s from "./Mobmenu.module.css";
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
-import { closeMobileModal } from "../../redux/modal/modalSlice";
+import { closeMobileModal } from "../../../redux/modal/modalSlice";
 import { Toggle } from "../ToggleSwitch/ToggleSwitch";
 
 const buildLinkClass = ({ isActive }) => {
