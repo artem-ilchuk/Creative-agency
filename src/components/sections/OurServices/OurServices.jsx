@@ -1,5 +1,5 @@
 import s from "./OurServices.module.css";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./ServiceCard/ServiceCard";
 import { servicesData } from "../../../data/servicesData";
 
 const OurServices = () => {

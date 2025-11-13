@@ -2,11 +2,11 @@ import s from "./Header.module.css";
 import clsx from "clsx";
 import useMedia from "../../../hooks/UseMedia";
 import { NavLink } from "react-router-dom";
-import { Toggle } from "../../ToggleSwitch/ToggleSwitch";
+import { Toggle } from "../../common/ToggleSwitch/ToggleSwitch";
 import { useSelector, useDispatch } from "react-redux";
 import { selectIsMobileModalOpen } from "../../../redux/modal/modalSelectors";
 import { toggleMobileModal } from "../../../redux/modal/modalSlice";
-import Mobmenu from "../../MobMenu/Mobmenu";
+import Mobmenu from "../MobileMenu/Mobmenu";
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(s.link, isActive && s.active);

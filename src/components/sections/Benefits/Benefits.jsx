@@ -1,8 +1,8 @@
 import s from "./Benefits.module.css";
-import BenefitsCard from "../BenefitsCard/BenefitsCard";
-import { benefitsData } from "../../../../data/benefitsData";
-import BenefitsList from "../BenefitsList/BenefitsList";
-import { benefitsDescription } from "../../../../data/benefitsDescription";
+import BenefitsCard from "./BenefitsCard/BenefitsCard";
+import { benefitsData } from "../../../data/benefitsData";
+import BenefitsList from "./BenefitsList/BenefitsList";
+import { benefitsDescription } from "../../../data/benefitsDescription";
 
 const Benefits = () => {
   return (

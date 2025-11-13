@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import Loader from "./components/Loader/Loader";
+import Loader from "./components/common/Loader/Loader";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";

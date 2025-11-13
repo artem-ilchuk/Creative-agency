@@ -1,11 +1,11 @@
 import s from "./Hero.module.css";
 import useMedia from "../../../hooks/UseMedia";
-import heroMob1x from "../../assets/img/Mobile/heroMob1x.webp";
-import heroMob2x from "../../assets/img/Mobile/heroMob2x.webp";
-import heroTab1x from "../../assets/img/Tab/heroTab1x.webp";
-import heroTab2x from "../../assets/img/Tab/heroTab2x.webp";
-import heroDesc1x from "../../assets/img/Desctop/heroDesc1x.webp";
-import heroDesc2x from "../../assets/img/Desctop/heroDesc2x.webp";
+import heroMob1x from "../../../assets/img/Mobile/heroMob1x.webp";
+import heroMob2x from "../../../assets/img/Mobile/heroMob2x.webp";
+import heroTab1x from "../../../assets/img/Tab/heroTab1x.webp";
+import heroTab2x from "../../../assets/img/Tab/heroTab2x.webp";
+import heroDesc1x from "../../../assets/img/Desctop/heroDesc1x.webp";
+import heroDesc2x from "../../../assets/img/Desctop/heroDesc2x.webp";
 import { NavLink } from "react-router-dom";
 
 const Hero = () => {

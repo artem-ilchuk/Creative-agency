@@ -1,8 +1,8 @@
 import s from "./HomePage.module.css";
-import Hero from "../../components/Hero/Hero";
-import OurServices from "../../components/OurServices/OurServices";
-import OurDocumentation from "../../components/OurDocumentation/OurDocumentation";
-import Benefits from "../../components/Benefits/Benefits";
+import Hero from "../../components/sections/Hero/Hero";
+import OurServices from "../../components/sections/OurServices/OurServices";
+import OurDocumentation from "../../components/sections/OurDocumentation/OurDocumentation";
+import Benefits from "../../components/sections/Benefits/Benefits";
 
 const HomePage = () => {
   return (

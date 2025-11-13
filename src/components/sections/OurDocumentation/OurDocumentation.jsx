@@ -1,6 +1,6 @@
 import s from "./OurDocumentation.module.css";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
-import Innovation from "../../assets/video/Digital Innovation Agency.webm";
+import VideoPlayer from "../../common/VideoPlayer/VideoPlayer";
+import Innovation from "../../../assets/video/Digital Innovation Agency.webm";
 
 const OurDocumentation = () => {
   return (
