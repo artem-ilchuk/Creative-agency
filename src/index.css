@@ -81,6 +81,7 @@
   --servicearrowback: var(--grayscale-grayscale-6);
   --servicearrow: var(--color-primary-1);
   --benefitcard: var(--color-white);
+  --workspace: var(--color-secondary-1);
   --servicecardshadow: -10px 30px 70px 0 rgba(219, 222, 225, 0.4);
 }
 
@@ -100,6 +101,7 @@
   --servicearrowback: #020e2d;
   --servicearrow: var(--color-white);
   --benefitcard: var(--color-primary-1);
+  --workspace: var(--color-secondary-3);
   --servicecardshadow: -10px 30px 70px 0 rgba(76, 64, 247, 0.2);
 }
 

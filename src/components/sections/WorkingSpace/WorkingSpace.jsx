@@ -1,5 +1,6 @@
 import s from "./WorkingSpace.module.css";
-import { imagesData } from "../../../data/workSpaceData";
+import imagesData from "../../../data/imagesData";
+import useMedia from "../../../hooks/UseMedia";
 
 const WorkingSpace = () => {
   const { isMobile, isTablet, isDesktop } = useMedia();

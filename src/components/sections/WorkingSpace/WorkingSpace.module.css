@@ -1,0 +1,21 @@
+.WorkingSpace {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--workspace);
+  padding-bottom: 20px;
+}
+.text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  padding-bottom: 60px;
+}
