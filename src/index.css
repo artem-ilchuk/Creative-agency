@@ -80,6 +80,7 @@
   --servicecard: var(--color-white);
   --servicearrowback: var(--grayscale-grayscale-6);
   --servicearrow: var(--color-primary-1);
+  --benefitcard: var(--color-white);
   --servicecardshadow: -10px 30px 70px 0 rgba(219, 222, 225, 0.4);
 }
 
@@ -98,6 +99,7 @@
   --servicecard: var(--color-dark);
   --servicearrowback: #020e2d;
   --servicearrow: var(--color-white);
+  --benefitcard: var(--color-primary-1);
   --servicecardshadow: -10px 30px 70px 0 rgba(76, 64, 247, 0.2);
 }
 
@@ -154,7 +156,7 @@ img {
 
 .container {
   min-width: 320px;
-  max-width: 440px;
+  max-width: 428px;
   padding: 0 24px;
   margin: 0 auto;
   overflow: hidden;

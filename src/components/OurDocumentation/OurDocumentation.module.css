@@ -45,7 +45,7 @@
 
 .backgroundWrapper {
   position: relative;
-  height: 344px;
+  height: 300px;
   overflow: hidden;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -89,24 +89,24 @@
   z-index: 2;
 }
 
-@media (min-width: 320px) and (max-width: 439px) {
+@media (min-width: 320px) and (max-width: 427px) {
   .videotest {
     min-width: 312px;
     max-width: 345px;
   }
 
   .backgroundWrapper {
-    height: 320px;
+    height: 300px;
   }
 
   .shape1 {
     top: -5%;
-    left: 32%;
+    left: 36%;
   }
 
   .shape2 {
-    top: -18%;
-    left: 80%;
+    top: -27%;
+    left: 82%;
   }
 }
 

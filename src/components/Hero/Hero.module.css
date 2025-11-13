@@ -71,7 +71,7 @@
 .Line path {
   stroke: var(--modalLines);
 }
-@media (min-width: 320px) and (max-width: 439px) {
+@media (min-width: 320px) and (max-width: 427px) {
   .Line {
     top: 445px;
   }

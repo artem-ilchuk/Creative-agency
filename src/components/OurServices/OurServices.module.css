@@ -46,7 +46,7 @@
   stroke: var(--modalLines);
 }
 
-@media (min-width: 320px) and (max-width: 439px) {
+@media (min-width: 320px) and (max-width: 427px) {
   .text {
     font-size: 19px;
   }

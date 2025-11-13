@@ -1,0 +1,112 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 80px;
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  padding-bottom: 24px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--links);
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+}
+
+@media (min-width: 1024px) {
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 53px;
+  }
+
+  .cardsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 486px;
+    height: 553px;
+    column-gap: 21.99px;
+    row-gap: 23.6px;
+  }
+
+  .cardsList li:first-child {
+    padding-top: 50.68px;
+  }
+
+  .content {
+    max-width: 365px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 133%;
+    padding-bottom: 35px;
+  }
+
+  .benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .benefits {
+    padding-top: 99px;
+    padding-bottom: 99px;
+    gap: 80px;
+  }
+
+  .cardsList {
+    width: 580px;
+    height: 702px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .cardsList li:first-child {
+    padding-top: 56px;
+  }
+
+  .content {
+    max-width: 460px;
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 178%;
+  }
+}
