@@ -13,13 +13,15 @@ const buildLinkClass = ({ isActive }) => {
 };
 
 const Header = () => {
-  const { isMobile } = useMedia();
+  const { isMobileAll } = useMedia();
+
   const dispatch = useDispatch();
   const isMobileModalOpen = useSelector(selectIsMobileModalOpen);
 
   const handleMobileOpenModal = () => {
     dispatch(toggleMobileModal());
   };
+
   return (
     <header className={s.header}>
       <div className={s.head}>
@@ -29,7 +31,7 @@ const Header = () => {
           </svg>
         </NavLink>
 
-        {isMobile ? (
+        {isMobileAll ? (
           <div className={s.mobileControls}>
             <Toggle />
             <button
@@ -89,7 +91,7 @@ const Header = () => {
         )}
       </div>
 
-      {isMobile && isMobileModalOpen && <Mobmenu />}
+      {isMobileAll && isMobileModalOpen && <Mobmenu />}
     </header>
   );
 };

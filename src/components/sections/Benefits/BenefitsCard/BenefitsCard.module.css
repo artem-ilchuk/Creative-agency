@@ -29,7 +29,13 @@
   opacity: 0.7;
 }
 
-@media (min-width: 320px) and (max-width: 427px) {
+@media (min-width: 320px) and (max-width: 359px) {
+  .content {
+    max-width: 276px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 427px) {
   .content {
     width: 345px;
     height: 166px;

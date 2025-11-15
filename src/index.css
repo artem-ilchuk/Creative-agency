@@ -66,7 +66,7 @@
 }
 
 [data-theme="light"] {
-  background-color: var(--color-white);
+  background-color: #f9f9fd;
   color: var(--text-dark);
   --bg: var(--color-white);
   --links: var(--text-grey);
@@ -81,7 +81,9 @@
   --servicearrowback: var(--grayscale-grayscale-6);
   --servicearrow: var(--color-primary-1);
   --benefitcard: var(--color-white);
+  --benefitsback: #f9f9fd;
   --workspace: var(--color-secondary-1);
+  --workback: var(--color-white);
   --servicecardshadow: -10px 30px 70px 0 rgba(219, 222, 225, 0.4);
 }
 
@@ -101,7 +103,9 @@
   --servicearrowback: #020e2d;
   --servicearrow: var(--color-white);
   --benefitcard: var(--color-primary-1);
+  --benefitsback: #020e2d;
   --workspace: var(--color-secondary-3);
+  --workback: var(--color-dark);
   --servicecardshadow: -10px 30px 70px 0 rgba(76, 64, 247, 0.2);
 }
 

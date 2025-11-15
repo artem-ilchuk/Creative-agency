@@ -89,7 +89,25 @@
   z-index: 2;
 }
 
-@media (min-width: 320px) and (max-width: 427px) {
+@media (min-width: 320px) and (max-width: 359px) {
+  .videoWrapper {
+    width: 100%;
+    min-width: 290px;
+    max-width: 276px;
+    height: auto;
+  }
+
+  .videotest {
+    width: 100%;
+    height: auto;
+    top: 210px;
+  }
+  .backgroundWrapper {
+    height: 260px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 427px) {
   .videotest {
     min-width: 312px;
     max-width: 345px;

@@ -54,7 +54,7 @@
   fill: var(--servicearrow);
 }
 
-@media (min-width: 320px) and (max-width: 439px) {
+@media (min-width: 320px) and (max-width: 427px) {
   .thumb {
     height: auto;
   }

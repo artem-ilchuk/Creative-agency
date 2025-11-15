@@ -9,11 +9,11 @@ import heroDesc2x from "../../../assets/img/Desctop/heroDesc2x.webp";
 import { NavLink } from "react-router-dom";
 
 const Hero = () => {
-  const { isMobile, isTablet, isDesktop } = useMedia();
+  const { isMobileAll, isTablet, isDesktop } = useMedia();
 
   return (
     <section className={s.hero}>
-      {isMobile && (
+      {isMobileAll && (
         <img
           className={s.heroImgMob}
           src={heroMob1x}

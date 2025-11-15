@@ -62,7 +62,7 @@
   transform: translateX(-50%);
   width: 1000px;
   height: 490px;
-  background-image: url("/public/lines/HomeLines/heroMobLine.svg");
+  background-image: url("/lines/HomeLines/heroMobLine.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
