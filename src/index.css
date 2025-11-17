@@ -84,6 +84,7 @@
   --benefitsback: #f9f9fd;
   --workspace: var(--color-secondary-1);
   --workback: var(--color-white);
+  --partnerlogo: var(--grayscale-grayscale-5);
   --servicecardshadow: -10px 30px 70px 0 rgba(219, 222, 225, 0.4);
 }
 
@@ -106,6 +107,7 @@
   --benefitsback: #020e2d;
   --workspace: var(--color-secondary-3);
   --workback: var(--color-dark);
+  --partnerlogo: var(--color-white);
   --servicecardshadow: -10px 30px 70px 0 rgba(76, 64, 247, 0.2);
 }
 
