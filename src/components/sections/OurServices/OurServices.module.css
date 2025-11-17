@@ -29,13 +29,13 @@
 }
 
 .Line {
+  background-image: url("/lines/HomeLines/serviceMobLine.svg");
   position: absolute;
   bottom: 490px;
   left: 50%;
   transform: translateX(-50%);
   width: 1000px;
   height: 490px;
-  background-image: url("/lines/HomeLines/serviceMobLine.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -77,17 +77,10 @@
   }
 
   .Line {
-    position: absolute;
+    background-image: url("/lines/HomeLines/serviceTabLine.svg");
     top: 450px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 2080.37px;
     height: 1021px;
-    background-image: url("/lines/HomeLines/serviceTabLine.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    pointer-events: none;
   }
 }
 
@@ -111,14 +104,7 @@
   }
 
   .Line {
-    position: absolute;
-    top: 585px;
-    width: 1440px;
-    stroke-width: 15px;
     background-image: url("/lines/HomeLines/serviceDescLine.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    pointer-events: none;
+    top: 585px;
   }
 }

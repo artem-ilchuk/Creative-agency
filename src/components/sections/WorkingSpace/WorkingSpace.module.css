@@ -33,25 +33,37 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  z-index: 2;
 }
 .servicesList li {
   border-radius: 7px;
   overflow: hidden;
 }
 
-.Line1 {
+.Line1,
+.Line2 {
   position: absolute;
-  top: 493px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 1000px;
   height: 490px;
-  background-image: url("/public/lines/HomeLines/spaceMobLine1.svg");
+  left: 50%;
+  transform: translateX(-50%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   pointer-events: none;
+  z-index: 1;
 }
+
+.Line1 {
+  background-image: url("/lines/HomeLines/spaceMobLine.svg");
+  top: 690px;
+}
+
+.Line2 {
+  background-image: url("/lines/HomeLines/spaceMobLine.svg");
+  bottom: 1040px;
+}
+
 .Line path {
   stroke: var(--modalLines);
 }
@@ -108,6 +120,26 @@
     grid-row: 2;
     align-self: end;
   }
+
+  .Line1,
+  .Line2 {
+    width: 2080.37px;
+    height: 1021px;
+    left: 50%;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  .Line1 {
+    background-image: url("/lines/HomeLines/spaceTabLine.svg");
+    top: 86px;
+  }
+
+  .Line2 {
+    background-image: url("/lines/HomeLines/spaceTabLine.svg");
+    top: 607px;
+    z-index: 1;
+  }
 }
 @media (min-width: 1440px) {
   .WorkingSpaceContent {
@@ -128,5 +160,16 @@
     column-gap: 32px;
     row-gap: 30px;
     max-width: 1121px;
+  }
+
+  .Line1 {
+    background-image: url("/lines/HomeLines/spaceDescLine.svg");
+    top: 339px;
+  }
+
+  .Line2 {
+    background-image: url("/lines/HomeLines/spaceDescLine.svg");
+    top: 860px;
+    z-index: 1;
   }
 }

@@ -56,13 +56,13 @@
   stroke-width: 5px;
 }
 .Line {
+  background-image: url("/lines/HomeLines/heroMobLine.svg");
   position: absolute;
   top: 493px;
   left: 50%;
   transform: translateX(-50%);
   width: 1000px;
   height: 490px;
-  background-image: url("/lines/HomeLines/heroMobLine.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -113,16 +113,9 @@
 
   .Line {
     background-image: url("/lines/HomeLines/heroTabLine.svg");
-    position: absolute;
     width: 2080.37px;
     height: 1021px;
-    left: 50%;
     top: -70px;
-    transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    pointer-events: none;
   }
 }
 @media (min-width: 1440px) {
@@ -153,14 +146,6 @@
   }
   .Line {
     background-image: url("/lines/HomeLines/heroDescLine.svg");
-    position: absolute;
-    width: 2080.37px;
-    height: 1021px;
     top: 110px;
-    left: 50%;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 }
